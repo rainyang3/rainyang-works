@@ -135,12 +135,32 @@ html{
         position: fixed;
         margin-left: 35px;
         margin-top: 80vh;
-        /* opacity: 1; */
+        opacity: .6;
         z-index: 10;
         }
     
     
+    #options {
+       
+        position: fixed;
+        margin-left: 35px;
+        margin-top: 82vh;
+        display: none;
+    }
 
+    .optionstext {
+        font-size: 1.5em;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: .25px white;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 0, 200;
+        font-style: normal;
+        /* margin-top: 2px; */
+    }
+
+    .optionstext.contact{
+        margin-top: -10px;
+    }
 
 
 
