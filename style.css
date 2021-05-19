@@ -10,37 +10,17 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    /* overflow-y: scroll; */
 }
 
-html{
-    background: url(res/cover\ bg\ low\ sat.jpg) no-repeat center fixed;
-    background-size: cover;
-    
-       
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    /* position: absolute; */
-    /* background: no-repeat center center cover; */
-    /* margin: 10px 10px;
-    position: relative; */
-    /* width: calc(100vw-0.1vw) ;
-    height: calc (100vh-0.1vh);
-    object-fit: contain;
-     */
-}
+
 
 .noise {
         position: fixed;
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-        z-index: 1;
-        
-        
+        z-index: 1;        
 }
 
 
@@ -80,15 +60,23 @@ html{
     /* BUTTONS and DECORATION */
 
     #rylogo{
-        width: 100px;
-        margin-top: 2%;
-        margin-left: 2%;
+        width: 4%;
+        margin-top: 20px;
+        margin-left: 35px;
         z-index: 2;
         margin-top: 30px;
-        margin-left: 35px;
+        background: none;
+        border: none;
         position: fixed;
-        
+        transition-property: transform; 
+        Transition-duration:0.5s; 
+        Transition-timing-function:ease-out; 
+        Transition-delay:0.1s
     }
+
+    #rylogo:hover {
+        transform: scale(1.1);   
+      }
 
     #light {
         width: 400px;
@@ -139,6 +127,35 @@ html{
         z-index: 10;
         }
     
+        #night {
+            background: linear-gradient(53deg, #00378f, #000032, #5a006a);
+            background-size: 300% 300%;
+            -webkit-animation: gradientmove 26s ease infinite;
+            -moz-animation: gradientmove 26s ease infinite;
+            -o-animation: gradientmove 26s ease infinite;
+            animation: gradientmove 26s ease infinite;
+            
+        }
+        @-webkit-keyframes gradientmove {
+            0%{background-position:0% 49%}
+            50%{background-position:100% 52%}
+            100%{background-position:0% 49%}
+        }
+        @-moz-keyframes gradientmove {
+            0%{background-position:0% 49%}
+            50%{background-position:100% 52%}
+            100%{background-position:0% 49%}
+        }
+        @-o-keyframes gradientmove {
+            0%{background-position:0% 49%}
+            50%{background-position:100% 52%}
+            100%{background-position:0% 49%}
+        }
+        @keyframes gradientmove {
+            0%{background-position:0% 49%}
+            50%{background-position:100% 52%}
+            100%{background-position:0% 49%}
+        }
     
     #options {
        
@@ -171,29 +188,43 @@ html{
    /* GRIDS */
 
    .grid{
+
+       
        display: grid;
-       grid-template-columns: 250px 1fr 1fr 1fr 1fr 35px;
-       grid-template-rows: 70px 1fr 1fr 1fr;
+       grid-template-columns: 210px 1fr 1fr 1fr 1fr 25px;
+       grid-template-rows: 60px 1fr 1fr 1fr 40px;
        grid-template-areas: 
 
        /* Layout of GRID */
        "leftbar . . . ."
        "leftbar boxone boxtwo boxthree boxfour"
        "leftbar boxfive boxsix boxseven boxeight"
-       "leftbar boxnine boxten boxeleven boxtwelve"  
+       "leftbar boxnine boxten boxeleven boxtwelve"   
        ;
-       grid-column-gap: 20px;
-       grid-row-gap: 20px;
+       grid-column-gap: 40px;
+       grid-row-gap: 40px;
         position: absolute;
         z-index: 10;
         /* size: auto; */
         /* overflow: scroll; */
        /* background: white;
        z-index: 20; */
+       /* margin-bottom: 30px; */
    }
 
 
    /* naming all elements to area */
+
+   .boximage{
+       height: 80%;
+       margin-top: 30px;
+       margin-left: 21.5%;
+      
+       display: block;
+       width: auto;
+       object-fit: contain;
+       
+   }
 
    .leftbar{
        grid-area: leftbar;
@@ -203,6 +234,7 @@ html{
    .box.one{
     grid-area: boxone;
     color: red;
+    object-fit: contain;
     /* margin-top: 60px; */
    }
 
@@ -277,7 +309,15 @@ html{
        border-radius: 1px;
        align-content: center;
        /* z-index: 10; */
+       transition-property: transform; 
+       Transition-duration:0.5s; 
+       Transition-timing-function:ease-out; 
+       Transition-delay:0.1s
    }
+
+   .box:hover {
+    transform: scale(1.1);   
+  }
 
 
 
@@ -315,3 +355,21 @@ html{
         opacity: .4;
     }
 }
+
+::-webkit-scrollbar{
+    
+    width: 10px;
+   background: transparent; 
+   display: none;
+   /* display: none; */
+}
+
+::-webkit-scrollbar-track{
+   background-color: rgba(255, 255, 255, 0.1);
+   /* display: none; */
+}
+::-webkit-scrollbar-thumb{
+   background-color: rgba(223, 41, 41, 0.5); 
+   border-radius: 5px;
+   height: 60px;
+ }
