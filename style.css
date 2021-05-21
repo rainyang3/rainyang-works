@@ -233,7 +233,7 @@ html,body
    .boximagehor{
     width: 80%;
     height: 60%;
-    margin-top: 15%;
+    margin-top: 20%;
     margin-bottom: 30px;
     margin-left: 10%;
    
@@ -271,7 +271,7 @@ p {
     position: absolute;
     height: 25%;
     z-index: 20;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(129, 0, 245,.3);
     width: 100%;
     /* align-content: center; */
     visibility: hidden;
@@ -290,7 +290,7 @@ p {
     position: absolute;
     height: 25%;
     z-index: 20;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(129, 0, 245,.3);
     width: 100%;
     /* align-content: center; */
     visibility: hidden;
@@ -389,7 +389,7 @@ p {
 
 
    .box{
-       background-color: black;
+       background-color: rgba(0, 0, 0, 0.5);
        /* border: cyan solid 2px; */
        height: 350px;
        width: 350px;
