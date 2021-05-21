@@ -203,7 +203,7 @@ html,body
        ;
        grid-column-gap: 40px;
        grid-row-gap: 40px;
-        position: absolute;
+        position: relative;
         z-index: 10;
         /* size: auto; */
         /* overflow: scroll; */
@@ -215,16 +215,100 @@ html,body
 
    /* naming all elements to area */
 
-   .boximage{
+   .boximagever{
        height: 80%;
+       width: auto;
        margin-top: 30px;
+       margin-bottom: 30px;
        margin-left: 21.5%;
       
        display: block;
-       width: auto;
+        width: auto;
        object-fit: contain;
+       position: relative;
+       display: block;
        
    }
+
+   .boximagehor{
+    width: 80%;
+    height: 60%;
+    margin-top: 15%;
+    margin-bottom: 30px;
+    margin-left: 10%;
+   
+    display: block;
+    width: auto;
+    object-fit: contain;
+    position: relative;
+    display: block;
+    
+}
+
+p {
+        
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 0, 200;
+    font-style: normal;
+    color: white;
+    /* padding: 10px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    margin-top: 5px;
+
+}
+
+
+
+/* BANNERS */
+
+
+/* BOX1 */
+
+.bannerone{
+    margin-top: 75%;
+    position: absolute;
+    height: 25%;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    /* align-content: center; */
+    visibility: hidden;
+}
+
+.box.one:hover .bannerone {
+    visibility: visible;
+    
+  }
+
+
+/* BOX2 */
+
+.bannertwo{
+    margin-top: 75%;
+    position: absolute;
+    height: 25%;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    /* align-content: center; */
+    visibility: hidden;
+}
+
+.box.two:hover .bannertwo {
+    visibility: visible;
+    
+  }
+
+
+
+
+
+
+
+
+  /* STRUCTURE */
 
    .leftbar{
        grid-area: leftbar;
@@ -235,12 +319,15 @@ html,body
     grid-area: boxone;
     color: red;
     object-fit: contain;
+    display: block;
+    position: relative;
     /* margin-top: 60px; */
    }
 
    .box.two{
     grid-area: boxtwo;
     color: red;
+    display: block;
     /* margin-top: 60px; */
     }   
 
@@ -312,7 +399,11 @@ html,body
        transition-property: transform; 
        Transition-duration:0.5s; 
        Transition-timing-function:ease-out; 
-       Transition-delay:0.1s
+       Transition-delay:0.1s;
+       object-fit: contain;
+       display: block;
+       position: relative;
+       
    }
 
    .box:hover {
