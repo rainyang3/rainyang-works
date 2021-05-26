@@ -394,6 +394,26 @@ p {
     visibility: visible;
     
   }
+
+
+/* BOX8 */
+
+.bannereight{
+    margin-top: 75%;
+    position: absolute;
+    height: 25%;
+    z-index: 20;
+    background-color: rgba(129, 0, 245,.3);
+    width: 100%;
+    /* align-content: center; */
+    visibility: hidden;
+}
+
+.box.eight:hover .bannereight {
+    visibility: visible;
+    
+}
+
  
 
 
