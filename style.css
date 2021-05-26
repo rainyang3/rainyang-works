@@ -61,10 +61,9 @@ html,body
 
     #rylogo{
         width: 4%;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-left: 35px;
         z-index: 2;
-        margin-top: 30px;
         background: none;
         border: none;
         position: fixed;
