@@ -190,7 +190,7 @@ html,body
 
        
        display: grid;
-       grid-template-columns: 210px 1fr 1fr 1fr 1fr 25px;
+       grid-template-columns: 210px 1fr 1fr 1fr 1fr 40px;
        grid-template-rows: 60px 1fr 1fr 1fr 40px;
        grid-template-areas: 
 
@@ -335,6 +335,62 @@ p {
 }
 
 .box.four:hover .bannerfour {
+    visibility: visible;
+    
+  }
+
+   /* BOX5 */
+
+   .bannerfive{
+    margin-top: 75%;
+    position: absolute;
+    height: 25%;
+    z-index: 20;
+    background-color: rgba(129, 0, 245,.3);
+    width: 100%;
+    /* align-content: center; */
+    visibility: hidden;
+}
+
+.box.five:hover .bannerfive {
+    visibility: visible;
+    
+  }
+
+
+  /* BOX6 */
+
+  .bannersix{
+    margin-top: 75%;
+    position: absolute;
+    height: 25%;
+    z-index: 20;
+    background-color: rgba(129, 0, 245,.3);
+    width: 100%;
+    /* align-content: center; */
+    visibility: hidden;
+}
+
+.box.six:hover .bannersix {
+    visibility: visible;
+    
+  }
+
+
+   /* BOX7 */
+
+   .bannerseven{
+    margin-top: 75%;
+    position: absolute;
+    height: 25%;
+    z-index: 20;
+    background-color: rgba(129, 0, 245,.3);
+    width: 100%;
+    /* align-content: center; */
+    visibility: hidden;
+}
+
+.box.seven:hover .bannerseven {
     visibility: visible;
     
   }
